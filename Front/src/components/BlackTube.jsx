@@ -13,7 +13,7 @@ function BlackTube() {
   // Obtener los posts de todos los usuarios
   const fetchPosts = async () => {
   try {
-    const response = await fetch("https://yutu-1-front.vercel.app", {
+    const response = await fetch("https://yutu-1-front.vercel.app/papa/all-posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function BlackTube() {
     }
   
     try {
-      const response = await fetch("https://yutu-1-front.vercel.app", {
+      const response = await fetch("https://yutu-1-front.vercel.app/papa/filter-posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

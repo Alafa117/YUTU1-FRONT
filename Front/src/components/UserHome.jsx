@@ -32,7 +32,7 @@ function UserHome() {
 
     try {
       // Solicitar la URL prefirmada
-      const response = await fetch("https://yutu-1-front.vercel.app", {
+      const response = await fetch("https://yutu-1-front.vercel.app/papa/generate-presigned-url", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ function UserHome() {
 
   const saveFileURL = async (fileURL, fileName) => {
     try {
-      const response = await fetch("https://yutu-1-front.vercel.app", {
+      const response = await fetch("https://yutu-1-front.vercel.app/papa/files", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,7 +102,7 @@ function UserHome() {
 
   const fetchFileURLs = async () => {
     try {
-      const response = await fetch("https://yutu-1-front.vercel.app", {
+      const response = await fetch("https://yutu-1-front.vercel.app/papa/user-files", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
