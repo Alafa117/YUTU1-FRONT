@@ -32,7 +32,7 @@ function UserHome() {
 
     try {
       // Solicitar la URL prefirmada
-      const response = await fetch("https://blackback01.vercel.app/papa/generate-presigned-url", {
+      const response = await fetch("https://yutu-1-front.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ function UserHome() {
           alert("Archivo subido exitosamente.");
 
           // Guardar la URL del archivo en la base de datos
-          const fileURL = `https://bucket-page-rm23.s3.amazonaws.com/${fileName}`;
+          const fileURL = `https://bucket-page-rm24.s3.amazonaws.com/${fileName}`;
           await saveFileURL(fileURL, fileName);
 
           // Actualizar la lista de archivos
@@ -78,7 +78,7 @@ function UserHome() {
 
   const saveFileURL = async (fileURL, fileName) => {
     try {
-      const response = await fetch("https://blackback01.vercel.app/papa/files", {
+      const response = await fetch("https://yutu-1-front.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,7 +102,7 @@ function UserHome() {
 
   const fetchFileURLs = async () => {
     try {
-      const response = await fetch("https://blackback01.vercel.app/papa/user-files", {
+      const response = await fetch("https://yutu-1-front.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

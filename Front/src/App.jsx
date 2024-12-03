@@ -31,7 +31,7 @@ function App() {
 
         {/* Página de BlackTube con barra de navegación */}
         <Route
-          path="/BlackTube"
+          path="/Youtube 1"
           element={
             <MainLayout>
               <BlackTube />
